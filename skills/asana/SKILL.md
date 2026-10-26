@@ -31,7 +31,7 @@ Asana is the record of **what's being done, by whom, and what's next** on a clie
 
 | Field | Rule |
 |---|---|
-| **Phase Domain** | **Always set** when the field exists. One of: Project Mgmt · Governance + Design · Platform + Licenses · Advisory + Training |
+| **Phase Domain** | **Always set** when the field exists. Values seen (10/25/26): Project Mgmt · Governance + Design · Platform + Licenses · Advisory + Training · Development Substitution · Optimization Ideas · Troubleshooting. The list changes, so read the current values from a task in the project. **Optimization Ideas:** start the description with "Suggested by <name>, <date>, <source>". |
 | **Client (SF)** | **Always set** when the field exists. |
 | *(missing field)* | If a required field isn't on the task, say so in the approval table. Don't skip it silently. |
 

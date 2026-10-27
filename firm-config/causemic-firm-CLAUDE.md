@@ -78,3 +78,6 @@ Approval for one action covers that action only. It doesn't carry over to the ne
 | CauseMic-wide runbooks, skills, standards, Jen's own session logs | `jen_center_of_excellence` |
 | Tasks and timelines | Asana |
 | Client-facing deliverables, recordings, data exports | Google Drive |
+
+- **Ask before saving anywhere else.** Without asking, you may only save to `jen_center_of_excellence` or to one of the CauseMic client Git repos under `~/VSCODE/Clients/CauseMic/`, and only when the table above clearly says that's where the thing goes. For anything else (a client working folder in `~/MyClaude/CauseMic/`, Desktop, Downloads, a new folder, Google Drive), ask Jen where it should go and wait for her answer. Do the same when more than one place could fit.
+- Temporary working files go in the session scratchpad, which doesn't need asking. Saving inside a repo is still a checkpoint (see above).

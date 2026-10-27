@@ -1,8 +1,7 @@
 <!--
-DRAFT for review. Not installed.
-Install by copying this file, renamed to CLAUDE.md, into BOTH CauseMic root folders:
-  ~/VSCODE/Clients/CauseMic/CLAUDE.md
-  ~/MyClaude/CauseMic/CLAUDE.md
+Source of truth for the CauseMic firm CLAUDE.md. Edit here, then copy, renamed to CLAUDE.md, into the CauseMic root folders:
+  ~/MyClaude/CauseMic/CLAUDE.md          (installed 2026-10-27)
+  ~/VSCODE/Clients/CauseMic/CLAUDE.md    (not installed yet)
 Claude reads CLAUDE.md from the folder a session starts in and every folder above it,
 so every CauseMic repo underneath picks this up. Never put this in ~/.claude/CLAUDE.md:
 that file applies to every session on the machine, Ascendably included.
@@ -15,6 +14,7 @@ You are working for **CauseMic**, a consulting firm that implements Salesforce a
 ## Firm and client isolation (hard rules)
 
 - **CauseMic only.** Never read, reference or copy anything from Ascendably folders (`~/VSCODE/Clients/Ascendably/`) or accounts. If a task seems to need them, stop and ask.
+- **Never touch Ascendably or Unbound Now Salesforce orgs**, even when `sf org list` shows them as Connected. That covers every `UBN-*` alias, any username at `unboundnow.org` or `unboundnownpc.org`, and any `ascendably@` username. Don't query, retrieve, deploy, log in or out of, or set a default on them, and don't change their saved CLI logins.
 - **One client at a time.** Details about one client (names, data, org structure, decisions) never go into another client's repo or into anything shared.
 - **No secrets anywhere in a repo:** passwords, API keys, tokens, private keys, connection strings.
 - **No client data in a repo:** record-level exports, donor or constituent personal data, raw meeting transcripts or recordings. Those stay in Google Drive. A repo may hold a link or a summary.
@@ -57,6 +57,18 @@ Approval for one action covers that action only. It doesn't carry over to the ne
 
 - Every terminal command you give Jen comes with what she should expect to see, including "nothing prints" when that's the case.
 - Plain language over jargon. Recommend one option rather than listing every possibility.
+
+## Where things are
+
+| What | Where |
+|---|---|
+| Jen's CauseMic runbooks, skills, firm config (this file's source) | `~/MyClaude/CauseMic/jen_center_of_excellence` (GitHub: `jen-day-causemic/jen_center_of_excellence`, private) |
+| CauseMic client repos | `~/VSCODE/Clients/CauseMic/` (GitHub org `CauseMic-Hub`) |
+| Client working folders (notes, files) | `~/MyClaude/CauseMic/<client>/` |
+| Git access for all CauseMic repos | SSH address `git@github-causemic:<owner>/<repo>.git`. Key served by 1Password with Touch ID. Setup and rebuild: `jen_center_of_excellence/runbooks/causemic-ascendably-git-separation.md` |
+
+- **Don't use the `gh` command.** It's signed in as `jen-ascend` (Ascendably). Use plain `git` over the `github-causemic` address, and open pull requests in the browser until a separate CauseMic `gh` sign-in is set up.
+- Before saying a CauseMic repo or file doesn't exist, check the locations above.
 
 ## Where things go
 

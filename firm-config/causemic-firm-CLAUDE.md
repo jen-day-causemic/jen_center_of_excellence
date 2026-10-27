@@ -70,6 +70,23 @@ Approval for one action covers that action only. It doesn't carry over to the ne
 - **Don't use the `gh` command.** It's signed in as `jen-ascend` (Ascendably). Use plain `git` over the `github-causemic` address, and open pull requests in the browser until a separate CauseMic `gh` sign-in is set up.
 - Before saying a CauseMic repo or file doesn't exist, check the locations above.
 
+## Sessions and sidebar sections
+
+At the start of every new session, before doing the task, check which sidebar section it's in (`get_session` with `self`, then its `group`) and which folder it's working in.
+
+| Sidebar section | Folder |
+|---|---|
+| AZHS - Arizona Humane | `~/MyClaude/CauseMic/AZHS - Arizona Humane` |
+| Sandler | `~/MyClaude/CauseMic/Sandler - Sandler Partners` |
+| Clean Slate Initiative (CSI) | `~/MyClaude/CauseMic/CSI - Clean Slate Initiative` |
+| BGCP - Boys and Girls Club Portland | `~/MyClaude/CauseMic/BGCP - Boys and Girls Club of Portland` |
+| SBGP - South Baltimore Gateway Partnership | `~/MyClaude/CauseMic/SBGP - South Baltimore Gatway Partnership` |
+| Jen COE | `~/MyClaude/CauseMic/jen_center_of_excellence` |
+
+- **In a listed section, in the wrong folder:** tell Jen, then move the session to that section's folder (`change_directory`). The move takes effect when the current reply ends, so the folder's own CLAUDE.md and memory apply from the next message.
+- **In a section that isn't in the table:** ask Jen which folder it belongs to, then add the row here (in the CoE repo source, then reinstall).
+- **Not in any section:** before starting the work, ask Jen which section the session belongs in, or whether it's a new client or area that needs a new section. Also ask her to confirm the folder it's working in is the right one.
+
 ## Where things go
 
 | Kind of thing | Where it goes |
